@@ -1,0 +1,13 @@
+import nltk
+import math
+import re
+
+image_dir = '~/Work/2011_acmmgc/PASCALSentence/bicycle/'
+f = open('similar.txt', 'r')
+similar_files = [image_dir+ text +'.txt' for text in f.readline().split()];
+
+class Generate(object):
+    def __init__(self):
+        pass;
+
+
