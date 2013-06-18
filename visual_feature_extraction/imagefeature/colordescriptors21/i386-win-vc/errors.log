@@ -1,0 +1,11 @@
+Sat04 15:14:51,889 - [Impala.CmdOptions ] help
+Sat04 15:15:41,392 - [Impala.CmdOptions ] help
+Sat04 15:16:59,469 - [Impala.CmdOptions ] Missing value for --ini
+Sat04 18:48:32,367 - [Impala.CmdOptions ] help
+Sat04 18:48:36,127 - [Impala.CmdOptions ] help
+Sat04 18:50:40,798 - [Core.Feature.InterestPointFeature ] [ERROR] Unknown detector mode: csift
+Sat04 18:50:40,799 - [Impala.Util.IOBufferFile ] Failed to open 
+Sat04 18:51:06,503 - [Core.Feature.InterestPointFeature ] [ERROR] Unknown detector mode: csift
+Sat04 18:51:06,504 - [Impala.Util.IOBufferFile ] Failed to open 
+Sat04 18:51:48,241 - [Core.Feature.InterestPointFeature ] [ERROR] Unknown detector mode: csift
+Sat04 18:51:48,241 - [Impala.Util.IOBufferFile ] Failed to open 

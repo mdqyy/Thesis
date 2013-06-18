@@ -1,0 +1,23 @@
+function feaVec = localbinarypattern( img, colorspace, blocknum )
+% GIST
+% Input
+%   img
+%   colorspace
+%   blocknum        blocknum^2 regions
+% Output
+%   feaVec
+
+height = floor(size(img,1)/blocknum)*blocknum;
+width = floor(size(img,2)/blocknum)*blocknum;
+img = imresize(img, [height width]);
+img = colorspaceconvert(img,colorspace);
+feaVec = zeros(blocknum^2*256,1);
+rind = 0;
+for rxind = 0:bl-1
+    for ryind = 0:2^lind-1
+        feaVec((1:rlen)+256*rind,1) = lbp(img((1:height)+heigth*rxind,(1:width)+height*ryind,:));
+        rind = rind+1;
+    end
+end
+
+end

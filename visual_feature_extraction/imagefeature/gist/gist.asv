@@ -1,0 +1,12 @@
+function feaVec = gist( img, colorspace, orientations, scales )
+% GIST この関数の概要をここに記述
+%   詳細説明をここに記述
+
+img = colorspaceconvert(img,colorspace);
+img = resize(img, max(size(img)), max(size(img)));
+G = createGabor(ones(1,scales)*orientations,max(size(img)));
+
+feaVec = gistGabor();
+
+end
+
