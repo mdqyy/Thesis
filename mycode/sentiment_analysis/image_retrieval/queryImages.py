@@ -13,7 +13,6 @@ def queryImages(query = "", numpages = 10, maxImages = 50):
         flickrSearch = flickr + "search/?" + "q=" + query + "&page=" +str(i)
         if(len(imagesLinks)>maxImages):
             break
-        
         try:
             r1 = BS(''.join(urlopen(flickrSearch).read()))
             r2 = r1.findAll('div', id = "photo-display-container")[0]

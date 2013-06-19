@@ -1,0 +1,17 @@
+from senti_classifier import senti_classifier
+from queryImages import queryImages
+
+queries = ['happy']
+
+f = open('happy_database.csv', 'w')
+
+for query in queries:
+    links, titles = queryImages(query, 100, 5000)
+    for i in range(len(links)):
+        f.write((query+";"+links[i]+";"+titles[i]+"\n").encode('utf8'))
+
+f.close()
+
+
+
+
